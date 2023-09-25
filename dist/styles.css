@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.card-top h2 {
+  font-size: 1.25rem;
+  color: hsl(179, 62%, 43%);
+}
+.card-top h3 {
+  font-size: 0.938rem;
+  color: hsl(71, 73%, 54%);
+}
+.card-top p {
+  font-size: 0.85rem;
+  color: hsl(218, 22%, 67%);
+  letter-spacing: 0.01em;
+  line-height: 1.75;
+}
+
+.card-left h2 {
+  font-size: 1.1rem;
+}
+.card-left h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+.card-left h3 span {
+  font-weight: lighter;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+.card-left p {
+  font-size: 0.938rem;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.card-right h3 {
+  font-size: 1.1rem;
+}
+.card-right li {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.644);
+}
+
+body {
+  font-family: "Karla";
+  background-color: hsl(204, 43%, 93%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+body .container {
+  border-radius: 0.35rem;
+  width: 83%;
+  margin-inline: auto;
+  display: grid;
+  grid-template-rows: repeat(1fr, auto);
+  overflow: hidden;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 740px) {
+  body .container {
+    display: flex;
+    flex-direction: column;
+    width: 39.7em;
+  }
+}
+body .container .card-top {
+  padding: 1.25em;
+  background-color: #fff;
+}
+@media screen and (min-width: 740px) {
+  body .container .card-top {
+    padding: 2.4em;
+  }
+}
+body .container .card-top h2 {
+  padding-bottom: 1em;
+}
+body .container .card-top h3 {
+  padding-bottom: 1em;
+}
+body .container .card-top p {
+  padding-bottom: 1em;
+}
+@media screen and (min-width: 740px) {
+  body .container .card-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+body .container .card-left {
+  padding: 1.25em;
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+@media screen and (min-width: 740px) {
+  body .container .card-left {
+    padding: 2.4em;
+  }
+}
+body .container .card-left h2 {
+  padding-bottom: 0.5em;
+}
+body .container .card-left button {
+  width: 80%;
+  margin-top: 1.75em;
+  margin-inline: auto;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 0.25rem;
+  height: 3em;
+  width: 100%;
+  color: #fff;
+  font-size: 0.938rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+body .container .card-right {
+  color: #fff;
+  padding: 1.25em;
+  background-color: hsl(179, 47%, 52%);
+}
+@media screen and (min-width: 740px) {
+  body .container .card-right {
+    padding: 2.4em;
+  }
+}
+body .container .card-right h3 {
+  padding-bottom: 1em;
+}
+body .container .card-right ul {
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=styles.css.map */

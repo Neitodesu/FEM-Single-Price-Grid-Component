@@ -1,0 +1,102 @@
+@use '../utils' as u;
+@use '../abstracts/' as a;
+
+body {
+	font-family: 'Karla';
+	background-color: u.$neutral1;
+	display: grid;
+	place-content: center;
+	height: 100vh;
+
+	.container {
+		border-radius: 0.35rem;
+		width: 83%;
+		margin-inline: auto;
+		display: grid;
+		grid-template-rows: repeat(1fr, auto);
+		overflow: hidden;
+		box-shadow: 0 5px 15px 1px rgba($color: #000000, $alpha: 0.2);
+
+		@include a.break(740px) {
+			display: flex;
+			flex-direction: column;
+			width: 39.7em;
+		}
+
+		.card-top {
+			padding: 1.25em;
+			background-color: #fff;
+
+			@include a.break(740px) {
+				padding: 2.4em;
+			}
+
+			h2 {
+				padding-bottom: 1em;
+			}
+
+			h3 {
+				padding-bottom: 1em;
+			}
+
+			p {
+				padding-bottom: 1em;
+			}
+		}
+
+		.card-bottom {
+			@include a.break(740px) {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+
+		.card-left {
+			padding: 1.25em;
+			background-color: u.$primary1;
+			color: #fff;
+
+			@include a.break(740px) {
+				padding: 2.4em;
+			}
+
+			h2 {
+				padding-bottom: 0.5em;
+			}
+
+			button {
+				width: 80%;
+				margin-top: 1.75em;
+				margin-inline: auto;
+				background-color: u.$primary2;
+				border: none;
+				border-radius: 0.25rem;
+				height: 3em;
+				width: 100%;
+				color: #fff;
+				font-size: 0.938rem;
+				font-weight: bold;
+				box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
+				cursor: pointer;
+			}
+		}
+
+		.card-right {
+			color: #fff;
+			padding: 1.25em;
+			background-color: u.$primary3;
+
+			@include a.break(740px) {
+				padding: 2.4em;
+			}
+
+			h3 {
+				padding-bottom: 1em;
+			}
+
+			ul {
+				line-height: 1.4;
+			}
+		}
+	}
+}

@@ -1,0 +1,53 @@
+@use '../utils/' as u;
+
+.card-top {
+	h2 {
+		font-size: 1.25rem;
+		color: u.$primary1;
+	}
+
+	h3 {
+		font-size: 0.938rem;
+		color: u.$primary2;
+	}
+
+	p {
+		font-size: 0.85rem;
+		color: u.$neutral2;
+		letter-spacing: 0.01em;
+		line-height: 1.75;
+	}
+}
+
+.card-left {
+	h2 {
+		font-size: 1.1rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		color: #fff;
+
+		span {
+			font-weight: lighter;
+			opacity: 0.5;
+			font-size: 1rem;
+		}
+	}
+
+	p {
+		font-size: 0.938rem;
+		color: rgba(255, 255, 255, 0.863);
+	}
+}
+
+.card-right {
+	h3 {
+		font-size: 1.1rem;
+	}
+
+	li {
+		font-size: 0.875rem;
+		color: rgba(255, 255, 255, 0.644);
+	}
+}
