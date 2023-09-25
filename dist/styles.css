@@ -86,7 +86,7 @@ body {
   height: 100vh;
 }
 body .container {
-  border-radius: 0.35rem;
+  border-radius: 0.5rem;
   width: 83%;
   margin-inline: auto;
   display: grid;
